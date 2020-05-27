@@ -34,7 +34,7 @@ class Scraper():
         html = res.text
         return BeautifulSoup(html, "html.parser")
 
-    def getTimeTable(self, soup):
+    def getTimeTable(self, soup, buildingName):
         timeTables = soup.select("table > tr")
 
         campus = []
@@ -45,11 +45,12 @@ class Scraper():
 
         for i in range(1, len(timeTables)):            
             data = timeTables[i].find_all("td")
-            campus.append(data[0].text.strip())
-            sbjtName.append(data[3].text.strip())
-            major.append(data[4].text.strip())
-            prof.append(data[6].text.strip())
-            room_time.append(data[7].text.strip())
+            if buildingName in data[7].text:
+                campus.append(data[0].text.strip())
+                sbjtName.append(data[3].text.strip())
+                major.append(data[4].text.strip())
+                prof.append(data[6].text.strip())
+                room_time.append(data[7].text.strip())
         
         self.writeCSV(campus, sbjtName, major, prof, room_time)
         
@@ -62,22 +63,23 @@ class Scraper():
 
         file.close()
 
-    def scrap(self, year, semester, searchType):
+    def scrap(self, year, semester, searchType, buildingName):
         formData = self.setRequestBody(year, semester, searchType)
         soupPage = self.getHTML(formData)
         
-        self.filename = "timeTable_" + searchType + "_" + name +".csv"
+        self.filename = "timeTable_" + searchType + "_" + buildingName +".csv"
         file = open(self.filename, "w", newline="")
         wr = csv.writer(file)
         wr.writerow(["No.","캠퍼스", "과목명", "개설학과", "대표강사", "강의실 / 강의시간"])
         file.close()
         
-        self.getTimeTable(soupPage)
+        self.getTimeTable(soupPage, buildingName)
 
      
 if __name__ == "__main__" :
     year = input("몇 년도를 검색하시겠습니까?(20XX)")
     semester = input("몇 학기 시간표를 검색하시겠습니까?(1, 2)")
     searchType = input("검색 타입은 무엇으로 설정하시겠습니까? (subject, professor)")
+    buildingName = input("검색할 건물이름을 입력해주십시오 :")
     s = Scraper()
-    s.scrap(year, semester, searchType)
+    s.scrap(year, semester, searchType, buildingName)
