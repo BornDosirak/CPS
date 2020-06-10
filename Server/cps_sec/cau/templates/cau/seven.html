@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title id="7">Testing Page</title>
+        <link rel="stylesheet" href="{% static 'style_seven.css' %}">
+    </head>
+    <body>
+        <div class="floor">
+            <img id='img' src="https://user-images.githubusercontent.com/30318917/83318674-f3973a80-a271-11ea-9fce-01cedefa4471.jpg" alt="310관 단면도" width="1000" height="600">
+            <div class="center-floor">7F</div>
+            <div class="top1 place" id = "701">701</div>
+            <div class="top2 place" id = "702">702</div>
+            <div class="top3 place" id = "703">703</div>
+            <div class="top4 place" id = "704">704</div>
+            <div class="side1 place" id = "705">705</div>
+            <div class="side2 place" id = "721">721</div>
+            <div class="side3 place" id = "722">722</div>
+            <div class="side4 place" id = "723">723</div>
+            <div class="bottom1 place" id = "726">726</div>
+            <div class="bottom2 place" id = "727">727</div>
+            <div class="bottom3 place" id = "728">728</div>
+            <div class="bottom4 place" id = "729">729</div>
+            <div class="bottom5 place" id = "730">730</div>
+            <div class="bottom6 place" id = "731">731</div>
+            <div class="bottom7 place" id = "732">732</div>
+
+        </div>
+        <div class="console_container">
+                <button id="btnB6" onclick=floorChange(this.id)>B6</button>
+                <button id="btnB5" onclick=floorChange(this.id)>B5</button>
+                <button id="btn3" onclick=floorChange(3)>3</button>
+                <button id="btn4" onclick=floorChange(4)>4</button>
+                <button id="btn5" onclick=floorChange(5)>5</button>
+                <button id="btn6" onclick=floorChange(6)>6</button>
+                <button id="btn7" onclick=floorChange(7)>7</button>
+                <button id="btn8" onclick=floorChange(8)>8</button>
+                <button id="btn9" onclick=floorChange(9)>9</button>
+            
+        </div>  
+    </body>
+    <script type="text/javascript" src="{% static 'scripts.js' %}"></script>
+</html>

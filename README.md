@@ -1,6 +1,8 @@
 # CPS
 사이버 물리 시스템 보안 프로젝트
 
+## 팀원 
+
 ## AWS / DynamoDB
     makeDB.js - make new table
 
