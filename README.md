@@ -2,32 +2,36 @@
 사이버 물리 시스템 보안 프로젝트
 
 ## 팀원 
-    20165079 김영빈
-    20165545 조현우
-    20161569 최경식
+> **20165079 김영빈**<br>
+> **20165545 조현우**<br>
+> **20161569 최경식**
 
 ## 사용 기술
-**Server**
+### Server
 
 | 사용 기술 | 버전(기기명) |
-|---|:---:|
-| `Python` | 3.8.1 |
-| `pip` | 20.1.1 |
-| `Django` | 3.0.7 |
+|:---:|:---:|
+| **Python** | 3.8.1 |
+| **Django** | 3.0.7 |
+| **pip** | 20.1.1 |
     
-**Arduino**
+### Arduino
 
-    아두이노 IDE 1.8.5
-    Python 2.7.13
-    WeMos D1 R2 보드
+| 사용 기술 | 버전(기기명) |
+|:---:|:---:|
+| **Arduino IDE** | 1.8.5 |
+| **Python** | 2.7.13 |
+| **Arduino WiFi board** | WeMos D1 R2 |
+
     
-**AWS**
+### AWS
 
-    Node.js 12.16.1
-    npm 6.13.4
-    moment 2.24.0
-    moment-timezone 0.5.28
-
+| 사용 기술 | 버전(기기명) |
+|:---:|:---:|
+| **Node.js** | 12.16.1 |
+| **npm** | 6.13.4 |
+| **moment** | 2.24.0 |
+| **moment-timezone** | 0.5.28 |
 
 ## AWS / DynamoDB
     makeDB.js - make new table
