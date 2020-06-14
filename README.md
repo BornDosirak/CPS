@@ -33,7 +33,7 @@
 
 #### 아두이노 Door 센서 구현 화면
 
-![image-20200614231814881](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20200614231814881.png)
+![door](https://user-images.githubusercontent.com/30318917/84596051-53a6f700-ae96-11ea-9a82-42ee1466bc64.gif)
 
 
 
@@ -43,37 +43,41 @@
 
 
 
+------
+
 #### **중앙대학교 310관 5층 구현**
 
-![__310_5](C:\Users\user\Desktop\쓰레기\__310_5.png)
+![__310_5](https://user-images.githubusercontent.com/30318917/84595975-eeeb9c80-ae95-11ea-91d5-100223b126cc.png)
 
 ​																				**(예시 503호**)
 
+
+
 - **사용중인 강의실**
 
-  ![green](C:\Users\user\Desktop\쓰레기\green.png)
+  ![green](https://user-images.githubusercontent.com/30318917/84595978-f27f2380-ae95-11ea-8f2e-e83f341aa16b.png)
 
   
 
 - **1단계 경보 (motion or door)**
 
-  ![orange](C:\Users\user\Desktop\쓰레기\orange.png)
+  ![orange](https://user-images.githubusercontent.com/30318917/84595982-f448e700-ae95-11ea-8280-9f2d0bb38c52.png)
 
   
 
 - **2단계 경보 (motion and door)**
 
-  ![red](C:\Users\user\Desktop\쓰레기\red.png)
+  ![red](https://user-images.githubusercontent.com/30318917/84595986-f612aa80-ae95-11ea-8669-ad2db9e03903.png)
 
   
 
 - **비어있는 강의실**
 
-  ![black](C:\Users\user\Desktop\쓰레기\black.png)
+  ![black](https://user-images.githubusercontent.com/30318917/84595976-f0b56000-ae95-11ea-8923-73033da0353c.png)
 
   
 
-검정색의 강의실이 Door 센서를 떨어뜨리자 1단계 경보가 울리도록 바뀌는 장면
+  검정색의 강의실이 Door 센서를 떨어뜨리자 1단계 경보가 울리도록 바뀌는 장면
 
 → GIF 파일 추가
 
