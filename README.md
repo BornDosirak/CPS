@@ -25,41 +25,53 @@
 
 ## 기본적인 프로젝트 동작 화면
 
+#### 아두이노 모션 센서 구현 화면
+
+​													 ![image-20200614231741216](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20200614231741216.png)
 
 
-아두이노 모션 센서 구현 화면
 
-→ GIF 파일 추가 (깃헙에서 파일 추가)
+#### 아두이노 Door 센서 구현 화면
 
-아두이노 Door 센서 구현 화면
+![image-20200614231814881](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20200614231814881.png)
 
-→ GIF 파일 추가 (깃헙에서 파일 추가)
 
-아두이노와 Local host 통신 연결
 
-→ GIF 파일 추가
+#### **아두이노와 Localhost 통신 연결**
 
-중앙대학교 310관 5층 구현
+![image-20200614231829203](C:\Users\user\AppData\Roaming\Typora\typora-user-images\image-20200614231829203.png)
 
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ebe7660-284b-4608-8f57-5102b3178a75/__310_5.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3ebe7660-284b-4608-8f57-5102b3178a75/__310_5.png)
 
-**예시 503호**
 
-- 사용중인 강의실
+#### **중앙대학교 310관 5층 구현**
 
-  ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46beed18-b31b-450b-bcd7-210df0f16400/_.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/46beed18-b31b-450b-bcd7-210df0f16400/_.png)
+![__310_5](C:\Users\user\Desktop\쓰레기\__310_5.png)
 
-- 1단계 경보 (motion or door)
+​																				**(예시 503호**)
 
-  ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dcaa4e36-6feb-4428-8405-3a951c3ad81c/15648.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/dcaa4e36-6feb-4428-8405-3a951c3ad81c/15648.png)
+- **사용중인 강의실**
 
-- 2단계 경보 (motion and door)
+  ![green](C:\Users\user\Desktop\쓰레기\green.png)
 
-  ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2c911d57-b2f6-4cce-88f8-7ff7d5efdc92/2.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/2c911d57-b2f6-4cce-88f8-7ff7d5efdc92/2.png)
+  
 
-- 비어있는 강의실
+- **1단계 경보 (motion or door)**
 
-  ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/23818427-c32c-44fc-9d10-7fb843b9e3e9/.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/23818427-c32c-44fc-9d10-7fb843b9e3e9/.png)
+  ![orange](C:\Users\user\Desktop\쓰레기\orange.png)
+
+  
+
+- **2단계 경보 (motion and door)**
+
+  ![red](C:\Users\user\Desktop\쓰레기\red.png)
+
+  
+
+- **비어있는 강의실**
+
+  ![black](C:\Users\user\Desktop\쓰레기\black.png)
+
+  
 
 검정색의 강의실이 Door 센서를 떨어뜨리자 1단계 경보가 울리도록 바뀌는 장면
 
